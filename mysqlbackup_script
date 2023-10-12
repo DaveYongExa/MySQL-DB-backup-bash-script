@@ -1,5 +1,4 @@
-# Backup directory
-BACKUP_DIR="/backup/mysqlbackup"
+#!/bin/bash
 
 # Main backup directory
 MAIN_BACKUP_DIR="/backup/mysqlbackup"
@@ -25,7 +24,7 @@ DATABASES=$(eval $MYSQL_CMD | grep -Ev "(Database|information_schema|mysql|perfo
 # Backup each database in separate .sql files
 for DB in $DATABASES; do
     # Backup file name for each database
-    BACKUP_FILE="$BACKUP_DIR/${DB}_backup_$CURRENT_DATE.sql"
+    BACKUP_FILE="$DAILY_BACKUP_DIR/${DB}_backup.sql"
 
     # MySQL dump command for individual database
     mysqldump --skip-lock-tables --databases $DB > $BACKUP_FILE
