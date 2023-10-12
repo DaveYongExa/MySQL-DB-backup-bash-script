@@ -1,2 +1,3 @@
 # MySQL-backup-bash-script
-First need create folder mysqlbackup under /backup
+1. First need to create a folder mysqlbackup under /backup
+2. 
