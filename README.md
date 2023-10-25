@@ -1,4 +1,4 @@
-Here's a Bash script that you can use to perform a daily MySQL database backup and retain 5 backup retention points in sql format under /backup/mysqlbackup. You can then schedule this script to run daily using Cron.
+Here's a Bash script that you can use to perform a daily MySQL database backup and retain 5 backup retention points in sql format on the designated directory. You can then schedule this script to run daily using Cron.
 
 1. Make the script executable: chmod +x backup_db_vx.sh
 2. Create the backup directory
