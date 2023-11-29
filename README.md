@@ -1,5 +1,6 @@
-Yum install git
-git clone [ HTTPS Link ] of the repo
+1. Yum install git
+2. git clone [ HTTPS Link ]
+
 
 Here's a Bash script that you can use to perform a daily MySQL database backup and retain 5 backup retention points in sql format on the designated directory. You can then schedule this script to run daily using Cron.
 
@@ -12,6 +13,7 @@ Here's a Bash script that you can use to perform a daily MySQL database backup a
 * Tell the client this is created based on a custom situation which is not within support scope.
 
 Probably share client where the backup is stored and how to retrieve and dump it if possible or the client asks.
+
 
 Sample MOTD notes:
 
